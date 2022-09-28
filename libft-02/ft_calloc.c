@@ -6,7 +6,7 @@
 /*   By: rsihmaok <rshimaok@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 10:56:39 by rshimaok          #+#    #+#             */
-/*   Updated: 2022/09/18 09:33:24 by rsihmaok         ###   ########.fr       */
+/*   Updated: 2022/09/18 16:27:57 by rsihmaok         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ void	*ft_calloc(size_t count, size_t size)
 //}else{
 //		printf("%p",p);
 //}
-///* メモリの開放 */
 //free(p);
 
 //return (0);

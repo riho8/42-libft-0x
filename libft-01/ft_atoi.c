@@ -6,7 +6,7 @@
 /*   By: rsihmaok <rshimaok@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 11:37:55 by rshimaok          #+#    #+#             */
-/*   Updated: 2022/09/18 10:31:44 by rsihmaok         ###   ########.fr       */
+/*   Updated: 2022/09/21 12:54:45 by rsihmaok         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *str)
 {
 	size_t	i;
-	long long	num;
+	unsigned long	num;
 	int		sign;
 
 	i = 0;

@@ -6,7 +6,7 @@
 /*   By: rsihmaok <rshimaok@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 10:50:05 by rshimaok          #+#    #+#             */
-/*   Updated: 2022/09/18 15:35:46 by rsihmaok         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:13:28 by rsihmaok         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
-	size_t	src_len;
 
 	if (size > 0)
 	{
