@@ -12,34 +12,65 @@
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*dest;
 	size_t	len;
 	size_t	i;
+	size_t  j;
 
 	i = 0;
-	if (!s1 || !s2) //ここ後々の課題で変更する必要あるらしい
+	j = 0;
+	if (!s2)
 		return (NULL);
+	if (!s1)
+	{
+		s1 = (char *)malloc(1 * sizeof(char));
+		s1[0] = '\0';
+	}
 	len = ft_strlen(s1) + ft_strlen(s2);
 	dest = (char *)malloc(len + 1);
 	if (!dest)
 		return (NULL);
-	while (*s1)
-	{
-		dest[i] = *s1;
-		s1++;
-		i++;
-	}
-	while (*s2)
-	{
-		dest[i] = *s2;
-		s2++;
-		i++;
-	}
+	while (s1[j])
+		dest[i++] = s1[j++];
+	j = 0;
+	while (s2[j])
+		dest[i++] = s2[j++];
 	dest[i] = '\0';
+	free(s1);
 	return (dest);
 }
+
+// libft ver. revised in gnl
+// char	*ft_strjoin(char const *s1, char const *s2)
+// {
+// 	char	*dest;
+// 	size_t	len;
+// 	size_t	i;
+
+// 	i = 0;
+// 	if (!s1 || !s2)
+// 		return (NULL);
+// 	len = ft_strlen(s1) + ft_strlen(s2);
+// 	dest = (char *)malloc(len + 1);
+// 	if (!dest)
+// 		return (NULL);
+// 	while (*s1)
+// 	{
+// 		dest[i] = *s1;
+// 		s1++;
+// 		i++;
+// 	}
+// 	while (*s2)
+// 	{
+// 		dest[i] = *s2;
+// 		s2++;
+// 		i++;
+// 	}
+// 	dest[i] = '\0';
+// 	return (dest);
+// }
 
 // int	main(void)
 // {
