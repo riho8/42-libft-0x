@@ -17,7 +17,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	char	*dest;
 	size_t	len;
 	size_t	i;
-	size_t  j;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -83,10 +83,10 @@ char	*ft_strjoin(char *s1, char *s2)
 // 	new = ft_strjoin(str1, str2); // ABCDEF
 // 	printf("%s\n", new);
 // 	free(new);
-// 	new = ft_strjoin(str1, str3); // ABC 
+// 	new = ft_strjoin(str1, str3); // ABC
 // 	printf("%s\n", new);
 // 	free(new);
-// 	new = ft_strjoin(str3, str2); // DEF 
+// 	new = ft_strjoin(str3, str2); // DEF
 // 	printf("%s\n", new);
 // 	free(new);
 // 	new = ft_strjoin(str3, str4); // NULL
